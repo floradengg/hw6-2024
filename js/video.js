@@ -80,14 +80,14 @@ document.querySelector("#mute").addEventListener("click", function() {
 document.querySelector("#vintage").addEventListener("click", function() {
 	// console.log("speed up video");
 	video = document.querySelector("#player1");
-	video.style.filter = "grayscale()";
+	video.classList.add("oldSchool");
 });
 
 // original
 document.querySelector("#orig").addEventListener("click", function() {
 	// console.log("speed up video");
 	video = document.querySelector("#player1");
-	video.style.filter = "none";
+	video.classList.remove("oldSchool");
 });
 
 
